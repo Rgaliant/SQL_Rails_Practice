@@ -1,0 +1,9 @@
+<h1><%= @customer.first_name %></h1>
+
+
+<%= link_to edit_customer_path(@customer) do %>
+<i class="ui pencil blue icon huge"></i>
+<% end %>
+<%= link_to @customer, method: :delete do %>
+<i class="ui trash red icon huge"></i>
+<% end %>
